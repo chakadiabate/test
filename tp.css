@@ -1,0 +1,208 @@
+body{
+    background: #fff;/*pour la couleur de fond*/
+    display: flex;/*pour mettre la page au milieu*/
+    justify-content: center ;/*pour centrer le contenu*/
+    align-items: center;/*pour rien*/
+    min-height: 100vh;/*pour la longueur minimale*/
+
+}
+:root{
+    --couleur_dominate1 : #417694;
+}
+.page{
+    width: 100%;/*pour la largeur total de ma page*/
+    max-width: 595px;/*Pour la largeur max*/
+    min-height: 856px;/*pour la longueur min*/
+    margin: 50px;
+    display: grid;/*pour diviser ma page*/
+    grid-template-columns: 35% 65%;/*pour le partage de la page*/
+}
+.page .gauche{
+    background:var(--couleur_dominate1);/*pour la couleur de fond de ma div gauche*/
+    padding: 10px;/* pour la marge interne*/
+    color: #fff;/*pour changer la couleur de police */
+}
+.page .droite{
+    background: #fff;/*pour la couleur de fond de ma div droite*/
+    
+}
+.gauche h2{
+    font-weight: bold;/*pour mettre en gras les mes titres h2*/
+    text-align: center;/*pour centrer mes h2*/
+    color: #fff;/* pour la couleur du texte*/
+}
+.image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    Overflow: hidden;
+    margin-left: 20px;
+}
+.image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact p{
+    font-size: 14px;/*pour la taille du texte*/
+    margin-left: 10px;/* pour la marge exterieure*/
+}
+.reseau p{
+    font-size: 14px;/*pour la taille du texte*/
+    margin-left: 10px;/* pour la marge exterieure*/
+}
+.langues, .loisirs{
+    border-top: 1px solid #fff;/*pour faire une bordure en haut*/
+}
+progress{
+    width: 70px;/* Pour la largeur */
+    height: 15px;/*pour lui donner un
+}
+.contact, .reseau, .langues, .loisirs{
+    margin-top: 30px;/*Pour faire une marge externe */
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.langues li{
+    margin-left: 20px;/*pour une marge à gauche*/
+    margin-top: 10px;/*une marge externe en haut*/
+}
+.loisirs li{
+    margin-left: 20px;/*pour une marge à gauche*/
+    margin-top: 10px;/*une marge externe en haut*/
+}
+.contact P{
+    margin-top: 10px;/*une marge externe en haut*/
+}
+.reseau P{
+    margin-top: 10px;/*une marge externe en haut*/
+}
+h1{
+    margin-top: 10px;/*une marge externe en haut*/
+    margin-left: 20px;/*pour une marge à gauche*/
+}
+.droite h2, h3{
+    color:var(--couleur_dominate1);/*pour la couleur du texte h2 h3*/
+    margin-left: 10px;/*pour une marge à gauche*/
+}
+.h3{
+    margin-left: 10px;/*pour une marge à gauche*/
+    margin-top: 15px;/*une marge externe en haut*/
+}
+.parcours{
+    margin-left: 9px;/*pour une marge à gauche*/
+    margin-top: 12px;/*une marge externe en haut*/
+}
+.experiences, .formation, .competence{
+    margin-top: 40px;/*une marge externe en haut*/
+}
+.experiences ul{
+    margin-top: 15px;/*une marge externe en haut*/
+    margin-left: 20px;/*pour une marge à gauche*/
+}
+.experiences li{
+    margin-top: 15px;/*une marge externe en haut*/
+    margin-left: 30px;/*pour une marge à gauche*/
+}
+.formation ul{
+    margin-top: 15px;/*une marge externe en haut*/
+    margin-left: 20px;/*pour une marge à gauche*/
+}
+.formation li{
+    margin-top: 15px;/*une marge externe en haut*/
+    margin-left: 30px;/*pour une marge à gauche*/
+}
+.competence ul{
+    margin-top: 15px;/*une marge externe en haut*/
+    margin-left: 20px;/*pour une marge à gauche*/
+}
+.competence li{
+    margin-top: 15px;/*une marge externe en haut*/
+    margin-left: 30px;/*pour une marge à gauche*/
+}
+@media/*pour la conponsivité*/  (max-width:600px){
+
+    .page {
+
+        grid-template-columns:repeat(1,1fr)
+        
+    }
+   /* .contact, .reseau, .langues, .loisirs{
+        text-align: center;
+    }*/
+    .droite{
+        text-align: left;
+    }
+
+}
+@media screen and (max-width: 390px){
+    .page{
+        width: 100%;/*pour la largeur total de ma page*/
+        width: 390px;/*Pour la largeur max*/
+        height: 300px;/*pour la longueur min*/
+        margin: 50px;
+        display: grid;/*pour diviser ma page*/
+        grid-template-columns: 35% 65%;/*pour le partage de la page*/
+    }
+    .contact, .reseau, .langues, .loisirs{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .contact p{
+        font-size: 10px;
+        margin-left: 0px;
+    }
+    .reseau p{
+        font-size: 10px;
+        margin-left: 0px;
+    }
+    .langues li{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .parcours{
+        font-size: 16px;
+        margin-top: 9px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .experiences, .formation, .competence{
+        margin-top: 10px;
+    }
+    .experiences li{
+        margin-left: 10px;
+    }
+    .competence li{
+        margin-left: 10px;
+    }
+    .image{
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        Overflow: hidden;
+        margin-right: 100px;
+        
+    }
+    .image img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
